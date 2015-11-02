@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cinemaCell" rowHeight="104" id="KGk-i7-Jjw" customClass="CinemaCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lko-Fu-iGG">
+                        <rect key="frame" x="15" y="8" width="207" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="grade" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2wg-M7-qRK">
+                        <rect key="frame" x="230" y="8" width="54" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpA-8F-Gff">
+                        <rect key="frame" x="15" y="29" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDD-pT-OPv">
+                        <rect key="frame" x="225" y="29" width="56" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.78105874799999997" blue="0.087251732580000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cinemaCouponMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iwr-zt-EiM">
+                        <rect key="frame" x="15" y="54" width="17" height="17"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cinemaSeatMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bcu-uT-TEN">
+                        <rect key="frame" x="40" y="54" width="17" height="17"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cinemaGrouponMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="UQr-nK-qJH">
+                        <rect key="frame" x="65" y="54" width="17" height="17"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imaxMark.png" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-I1-bNP">
+                        <rect key="frame" x="249" y="55" width="32" height="16"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="address" destination="YpA-8F-Gff" id="bJ4-jq-nXH"/>
+                <outlet property="couponImageView" destination="Iwr-zt-EiM" id="dBu-VN-G3I"/>
+                <outlet property="grade" destination="2wg-M7-qRK" id="kFm-M3-8He"/>
+                <outlet property="groupImageView" destination="UQr-nK-qJH" id="0k3-5T-duD"/>
+                <outlet property="imaxImageView" destination="JXC-I1-bNP" id="Bfe-cZ-7VD"/>
+                <outlet property="name" destination="lko-Fu-iGG" id="e40-PK-8bT"/>
+                <outlet property="price" destination="MDD-pT-OPv" id="cmn-8t-x1Z"/>
+                <outlet property="seatImageView" destination="Bcu-uT-TEN" id="Zvx-Cr-j82"/>
+            </connections>
+            <point key="canvasLocation" x="499" y="235"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cinemaCouponMark.png" width="17" height="17"/>
+        <image name="cinemaGrouponMark.png" width="17" height="17"/>
+        <image name="cinemaSeatMark.png" width="17" height="17"/>
+        <image name="imaxMark.png" width="32" height="16"/>
+    </resources>
+</document>
